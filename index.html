@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" style="display: flex;">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Three.js Canvas -->
+    <canvas class="webgl"></canvas>
+    
+    <nav class="nav-container">
+        <div class="navbar">
+            <a href="#home" class="logo">Portfolio</a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <span>☰</span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home">
+            <div class="content-container fade-in">
+                <h1>Welcome to My Universe</h1>
+                <p class="lead">Full Stack Developer & Creative Coder</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="content-container fade-in">
+                <h2>About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a passionate developer who loves creating immersive digital experiences. With expertise in both front-end and back-end development, I bring ideas to life through clean code and creative solutions.</p>
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <ul class="skills-list">
+                                <li>Frontend Development</li>
+                                <li>Backend Development</li>
+                                <li>Creative Coding</li>
+                                <li>3D Web Development</li>
+                            </ul>
+                        </div>
+                        <a href="resume.pdf" download class="btn btn-resume">
+                            <i class="fas fa-download"></i>
+                            View Full Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="content-container fade-in">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>Cosmic Explorer</h3>
+                        <p>An interactive space exploration web application built with Three.js and WebGL.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-secondary">Source Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>Data Visualizer</h3>
+                        <p>A real-time data visualization tool using D3.js and React.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-secondary">Source Code</a>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <h3>AI Assistant</h3>
+                        <p>An AI-powered assistant built with Python and TensorFlow.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">View Project</a>
+                            <a href="#" class="btn btn-small btn-secondary">Source Code</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content-container fade-in">
+                <h2>Get in Touch</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                        <div class="social-links">
+                            <a href="mailto:your.email@example.com" class="btn btn-social">Email</a>
+                            <a href="https://github.com/yourusername" class="btn btn-social">GitHub</a>
+                            <a href="https://linkedin.com/in/yourusername" class="btn btn-social">LinkedIn</a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
